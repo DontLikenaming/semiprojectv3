@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="css/bs5/bootstrap.min.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <button type="button" class="btn btn-success">부트스트랩</button>
-    <button type="button" class="btn btn-primary">부트스트랩</button>
+    <div class="container">
+        <header class="row">
+            <div class="col">
+                <h1>Lorem Ipsum</h1>
+            </div>
+            <div class="col text-end">
+                <button type="button" class="btn btn-danger">로그인</button>
+                <button type="button" class="btn btn-primary">회원가입</button>
+            </div>
+        </header>
+        <nav>네비</nav>
+        <div id="main">메인</div>
+        <footer>푸터</footer>
+    </div>
     <script src="js/bs5/bootstrap.bundle.min.js"></script>
 </body>
 </html>
