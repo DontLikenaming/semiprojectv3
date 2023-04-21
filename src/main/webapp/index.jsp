@@ -13,19 +13,32 @@
             <div class="col">
                 <h1>Lorem Ipsum</h1>
             </div>
-            <div class="col text-end">
+            <div class="col text-end mt-2">
                 <button type="button" class="btn btn-danger"
                         data-bs-target="#loginModalfrm" data-bs-toggle="modal">로그인</button>
                 <button type="button" class="btn btn-primary">회원가입</button>
             </div>
         </header>
-        <nav>네비</nav>
+        <nav class="navbar navbar-expand bg-light rounded-3 border border-dark">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item"><a href="/intro.jsp" class="nav-link border-end">프로젝트 소개</a></li>
+                <li class="nav-item"><a href="/join/agree.jsp" class="nav-link border-end">회원가입</a></li>
+                <li class="nav-item"><a href="/board/list.jsp" class="nav-link border-end">게시판</a></li>
+                <li class="nav-item"><a href="/pds/list.jsp" class="nav-link border-end">자료실</a></li>
+                <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link border-end">갤러리</a></li>
+                <li class="nav-item"><a href="/admin.jsp" class="nav-link">관리자</a></li>
+            </ul>
+        </nav>
         <div id="main">메인</div>
-        <footer>푸터</footer>
+        <footer>
+            <hr>
+
+        </footer>
     </div>
 
     <%--로그인 폼 모달--%>
-    <div class="modal" id="loginModalfrm" role="dialog" data-bs-backdrop="static">
+    <div class="modal fade" id="loginModalfrm" role="dialog" data-bs-backdrop="static"
+        data-bs-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
