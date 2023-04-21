@@ -414,8 +414,10 @@ Copyright © Kakao Corp. All rights reserved.
         </div>
         <div class="card card-body bg-light rounded-3 text-center mt-2 mx-3">
             <div>
-                <button type="button" name="agreeok" id="agreeok" class="btn btn-success float-right me-3">모두 동의합니다.</button>
-                <button type="button" name="noagree" id="noagree" class="btn btn-danger float-right">동의하지 않습니다.</button>
+                <button type="button" name="agreeok" id="agreeok" class="btn btn-success float-right me-3">
+                    <i class="fa-solid fa-check"></i> 모두 동의합니다.</button>
+                <button type="button" name="noagree" id="noagree" class="btn btn-danger float-right">
+                    <i class="fa-solid fa-xmark"></i> 동의하지 않습니다.</button>
             </div>
         </div>
     </div>

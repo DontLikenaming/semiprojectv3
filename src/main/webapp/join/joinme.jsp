@@ -58,7 +58,65 @@
             <h3 class="mb-4">일반회원</h3>
             <form name="joinfrm" id="joinfrm">
                 <div class="row">
-
+                    <div class="row col-11 offset-1 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="name">이름</label>
+                        <div class="col-3">
+                            <input type="text" class="form-control border-danger bg-light" id="name" name="name" readonly>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="userid">아이디</label>
+                        <div class="col-3">
+                            <input type="text" class="form-control border-danger" id="userid" name="userid">
+                        </div>
+                        <span class="col-auto form-text" id="uidmsg">
+                            6~16 자의 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="passwd">비밀번호</label>
+                        <div class="col-3">
+                            <input type="password" class="form-control border-danger" id="passwd" name="passwd">
+                        </div>
+                        <span class="col-auto form-text" id="pwdmsg">
+                            6~16 자의 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="reppsswd">비밀번호 확인</label>
+                        <div class="col-3">
+                            <input type="password" class="form-control border-danger" id="reppsswd" name="reppsswd">
+                        </div>
+                        <span class="col-auto form-text">
+                            이전 항목에서 입력했던 비밀번호를 한번 더 입력하세요.
+                        </span>
+                    </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="zip1">우편번호</label>
+                        <div class="col-1">
+                            <input type="text" class="form-control border-danger bg-light"
+                                   id="zip1" name="zip1" readonly>
+                        </div>
+                        <div class="col-1">
+                            <input type="text" class="form-control border-danger bg-light"
+                                   id="zip2" name="zip2" readonly>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-dark"
+                                    data-bs-toggle="modal" data-bs-target="#ziqmodal">
+                                <i class="fas fa-question-circle"></i> 우편번호 찾기</button>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end mt-1" for="addr1">나머지 주소</label>
+                        <div class="col-4">
+                            <input type="text" class="form-control border-danger bg-light"
+                                   id="addr1" name="addr1" readonly>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="form-control border-danger" id="addr2" name="addr2">
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
@@ -69,10 +127,58 @@
                             <i class="fa-solid fa-xmark-circle"></i> 입력취소</button>
                     </div>
                 </div>
+
+                <input type="hidden" name="phone" id="phone">
+                <input type="hidden" name="zipcode" id="zipcode">
+                <input type="hidden" name="email" id="email">
             </form>
         </div>
 
         <!-- 우편번호 폼 모달 -->
+        <div class="modal fade" id="ziqmodal" role="dialog" data-bs-backdrop="static"
+             data-bs-keyboard="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="mt-3">
+                        <h5 class="modal-title" id="exampleModalLabel"><h3>우편번호 찾기</h3></h5>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="zipfrm">
+
+                            <div class="row mt-3">
+                                <div class="col-4 text-danger text-end">
+                                <label for="findzip" class="form-label">검색하실 주소의<br>
+                                    동 이름을 입력하세요</label>
+                                </div>
+                                <div class="col-5 d-flex justify-content-end">
+                                    <input type="text" class="form-control border-danger" id="findzip" placeholder="주소를 입력하세요.">
+                                </div>
+                                <div class="col-auto me-1 d-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary">검색하기</button>
+                                </div>
+                                <div class="col-10 offset-1 mt-4">
+                                    지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색] 버튼을 클릭하세요
+                                </div>
+                                <div class="offset-1 col-9 mt-3">
+                                    <label for="zipaddr"></label>
+                                    <textarea class="form-control border-danger"
+                                              style="overflow-y:scroll; overflow-x: hidden;"
+                                              rows="15" id="zipaddr" name="zipaddr"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-end">
+                        <hr>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">선택하고 닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </div>

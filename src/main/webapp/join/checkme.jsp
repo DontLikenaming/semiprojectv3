@@ -40,8 +40,8 @@
         </div>
         <nav style="--bs-breadcrumb-divider: '>'; " class="mt-3">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item active"><button class="btn btn-light" disabled>이용약관</button></li>
-                <li class="breadcrumb-item"><button class="btn btn-success" disabled>실명확인</button></li>
+                <li class="breadcrumb-item active"><button class="btn btn-success" disabled>이용약관</button></li>
+                <li class="breadcrumb-item active"><button class="btn btn-success" disabled>실명확인</button></li>
                 <li class="breadcrumb-item"><button class="btn btn-light" disabled>정보입력</button></li>
                 <li class="breadcrumb-item"><button class="btn btn-light" disabled>가입완료</button></li>
             </ul>
@@ -116,7 +116,7 @@
                         </div>
                     <div class="col-5">
                         <ul>
-                            <li>주민등록번호 입력 없이 전화번호로 회원가입이 가능합니다.</li>
+                            <li>주민등록번호 입력 없이 회원가입이 가능합니다.</li>
                             <li>이름, 생년월일과 성별은 <span style="color:red">추후 변경할 수 없습니다.</span></li>
                             <li><span style="color:red">휴대폰 가입인증</span>을 하셔야 공개 게시판 이용이 가능합니다.</li>
                         </ul>
@@ -137,7 +137,7 @@
             <h3 class="mb-4">실명확인 회원가입</h3>
             <form id="checkfrm2" name="checkfrm2">
                 <div class="row">
-                    <div class="col-5 offset-1 mt-5">
+                    <div class="col-5 offset-1 mt-4">
                         <div class="row">
                             <label class="col-3 col-form-label text-warning text-end" for="name2">이름</label>
                             <div class="col-6">
