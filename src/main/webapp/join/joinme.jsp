@@ -55,8 +55,21 @@
             <hr>
         </div>
         <div class="card card-body bg-light mt-5 mx-3">
-            <h3 class="mb-4">일반회원가입</h3>
-            <div class="col-5 offset-1"></div>
+            <h3 class="mb-4">일반회원</h3>
+            <form name="joinfrm" id="joinfrm">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <hr class="w-75 mx-auto">
+                        <button type="button" name="joinbtn" id="joinbtn" class="btn btn-primary float-right me-3">
+                            <i class="fa-solid fa-check-circle"></i> 입력완료</button>
+                        <button type="button" name="cancelbtn" id="cancelbtn" class="btn btn-danger float-right">
+                            <i class="fa-solid fa-xmark-circle"></i> 입력취소</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <!-- 우편번호 폼 모달 -->
