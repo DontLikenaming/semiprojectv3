@@ -21,15 +21,24 @@
         </header>
         <nav class="navbar navbar-expand bg-light rounded-3 border border-dark">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item"><a href="/intro.jsp" class="nav-link border-end">프로젝트 소개</a></li>
-                <li class="nav-item"><a href="/join/agree.jsp" class="nav-link border-end">회원가입</a></li>
-                <li class="nav-item"><a href="/board/list.jsp" class="nav-link border-end">게시판</a></li>
-                <li class="nav-item"><a href="/pds/list.jsp" class="nav-link border-end">자료실</a></li>
-                <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link border-end">갤러리</a></li>
-                <li class="nav-item"><a href="/admin.jsp" class="nav-link">관리자</a></li>
+                <li class="nav-item"><a href="/intro.jsp" class="nav-link border-end fs-5">프로젝트 소개</a></li>
+                <li class="nav-item"><a href="/join/agree.jsp" class="nav-link border-end fs-5">회원가입</a></li>
+                <li class="nav-item"><a href="/board/list.jsp" class="nav-link border-end fs-5">게시판</a></li>
+                <li class="nav-item"><a href="/pds/list.jsp" class="nav-link border-end fs-5">자료실</a></li>
+                <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link border-end fs-5">갤러리</a></li>
+                <li class="nav-item"><a href="/admin.jsp" class="nav-link fs-5">관리자</a></li>
             </ul>
         </nav>
-        <div id="main">메인</div>
+        <div id="main">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center p-3">超機密 PROJECT 補完計劃</h1>
+                </div>
+                <div class="col-8 offset-2"><img src="img/img.jpg" alt="main" class="img-fluid"></div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
         <footer>
             <hr>
             <h6 class="col text-end p-1">
