@@ -11,7 +11,7 @@
     <div class="container">
         <header class="row">
             <div class="col">
-                <h1>Lorem Ipsum</h1>
+                <h1><strong>Lorem Ipsum</strong></h1>
             </div>
             <div class="col text-end mt-2">
                 <button type="button" class="btn btn-danger"
@@ -36,7 +36,25 @@
                 </div>
                 <div class="col-8 offset-2"><img src="img/img.jpg" alt="main" class="img-fluid"></div>
             </div>
-            <div class="row"></div>
+            <div class="row">
+                <div class="text-center col-8 offset-2 mt-4">
+                    <p>Aliquam vitae posuere urna, a tincidunt elit.
+                        Proin interdum malesuada rhoncus.
+                        Donec rhoncus at erat vitae blandit.
+                        Nunc scelerisque, sem quis rutrum maximus,
+                        enim arcu rhoncus dolor,
+                        vel gravida nunc velit bibendum arcu.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                        per inceptos himenaeos.
+                        Proin feugiat nisi ac justo fringilla pulvinar.
+                        Praesent egestas commodo mi, sed congue est sodales at.
+                        Quisque vestibulum, enim quis tempor tincidunt,
+                        massa leo posuere lorem, eget egestas lacus lorem et urna.</p>
+                    <div>
+                        <button class="btn btn-success mt-2 mb-2">지금 바로 시작하기</button>
+                    </div>
+                </div>
+            </div>
             <div class="row"></div>
         </div>
         <footer>
