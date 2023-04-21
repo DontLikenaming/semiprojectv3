@@ -7,6 +7,9 @@
     <title>semi project v3</title>
     <link rel="stylesheet" href="/css/bs5/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/bdcc6494b9.js" crossorigin="anonymous"></script>
+    <style>
+        li.breadcrumb-item::before {margin-top:5px;}
+    </style>
 </head>
 <body>
 <div class="container">
@@ -23,7 +26,7 @@
     <nav class="navbar navbar-expand bg-light rounded-3 border border-dark">
         <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item"><a href="/intro.jsp" class="nav-link border-end fs-5">프로젝트 소개</a></li>
-            <li class="nav-item"><a href="/join/agree.jsp" class="nav-link border-end fs-5">회원가입</a></li>
+            <li class="nav-item"><a href="/join/agree.jsp" class="nav-link border-end fs-5 active disabled">회원가입</a></li>
             <li class="nav-item"><a href="/board/list.jsp" class="nav-link border-end fs-5">게시판</a></li>
             <li class="nav-item"><a href="/pds/list.jsp" class="nav-link border-end fs-5">자료실</a></li>
             <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link border-end fs-5">갤러리</a></li>
@@ -35,9 +38,9 @@
             <i class="fa-solid fa-users fa-2xl"> 회원가입</i>
             <hr>
         </div>
-        <nav style="--bs-breadcrumb-divider: '>';" class="mt-3">
+        <nav style="--bs-breadcrumb-divider: '>'; " class="mt-3">
             <ul class="breadcrumb">
-              <li class="breadcrumb-item active"><button class="btn btn-success" disabled>이용약관</button></li>
+                <li class="breadcrumb-item active"><button class="btn btn-success" disabled>이용약관</button></li>
                 <li class="breadcrumb-item"><button class="btn btn-light" disabled>실명확인</button></li>
                 <li class="breadcrumb-item"><button class="btn btn-light" disabled>정보입력</button></li>
                 <li class="breadcrumb-item"><button class="btn btn-light" disabled>가입완료</button></li>
