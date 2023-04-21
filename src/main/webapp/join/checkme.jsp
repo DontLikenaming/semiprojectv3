@@ -56,19 +56,78 @@
             <hr>
         </div>
         <div class="card card-body bg-light mt-5 mx-3">
-            <h2>인증1</h2>
-            <form>
-                <label>이름</label>
-                <input type="text">
-                <label>전화번호</label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
+            <h3>회원가입</h3>
+            <form id="checkfrm1" name="checkfrm1">
+                <div class="row">
+                    <div class="col-5 offset-1">
+                        <div class="row">
+                                <label class="col-4 col-form-label text-warning text-end" for="name">이름</label>
+                            <div class="col-6">
+                                <input class="form-control border-warning" id="name" name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <label class="col-4 col-form-label text-warning text-end" for="byear">생년월일</label>
+                            <div class="col-3">
+                                <select class="form-select col-3 border-warning" id="byear" name="byear">
+                                    <option>년도</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <select class="form-select border-warning" id="bmonth" name="byear">
+                                    <option>월</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <select class="form-select border-warning" id="bday" name="byear">
+                                    <option>일</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="row mt-2">
+                                <label class="col-4 col-form-label text-warning text-end" for="gender">성별</label>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="gmale" name="gmale"
+                                                   value="m" checked>
+                                            <label for="gmale" class="form-check-label text-warning">남자</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="gfmale" name="gfmale"
+                                                   value="f">
+                                            <label for="gfmale" class="form-check-label text-warning">여자</label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <div class="col-5">
+                        대충 글귀
+                    </div>
+                    </div>
+
+                <div class="row">
+                    <button type="button" name="agreeok" id="agreeok" class="btn btn-success float-right me-3">확인하기</button>
+                    <button type="button" name="noagree" id="noagree" class="btn btn-danger float-right">취소하기</button>
+                </div>
             </form>
         </div>
         <div class="card card-body bg-light mt-5 mx-3">
-            <h2>인증2</h2>
-            <form>
+            <h3>실명확인 회원가입</h3>
+            <form id="checkfrm2" name="checkfrm2">
                 <label>이름</label>
                 <input type="text">
                 <label>전화번호</label>
