@@ -35,7 +35,7 @@
     </nav>
     <div id="main">
         <div class="mt-4">
-            <i class="fa-solid fa-users fa-2xl"> 회원가입</i>
+            <i class="fa-solid fa-users fa-2xl"></i> 회원가입
             <hr>
         </div>
         <nav style="--bs-breadcrumb-divider: '>'; " class="mt-3">
