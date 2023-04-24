@@ -117,6 +117,56 @@
                             <input type="text" class="form-control border-danger" id="addr2" name="addr2">
                         </div>
                     </div>
+                    <div class="row col-11 offset-1 mt-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end"
+                               for="email1">전자우편 주소</label>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <input type="text" name="email1" id="email1"
+                                       class="form-control border-danger">
+                                <span class="input-group-text border-danger">@</span>
+                                <input type="text" name="email2" id="email2"
+                                       class="form-control border-danger bg-light" readonly>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <select class="form-select border-danger" id="email3">
+                                <option>선택하세요</option>
+                                <option>직접입력하기</option>
+                                <option>naver.com</option>
+                                <option>gmail.com</option>
+                                <option>hotmail.com</option>
+                            </select> </div>
+                    </div>
+
+                    <div class="row col-11 offset-1 mt-3 mb-3 align-items-center">
+                        <label class="col-2 form-label text-danger text-end"
+                               for="tel1">전화번호</label>
+                        <div class="col-2">
+                            <select class="form-select border-danger"
+                                    name="tel1" id="tel1">
+                                <option>국번</option>
+                                <option>010</option>
+                                <option>011</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="tel2" id="tel2"
+                                   class="form-control border-danger"> </div>
+                        <div class="col-2">
+                            <input type="text" name="tel3" id="tel3"
+                                   class="form-control border-danger"> </div>
+                    </div>
+
+                    <div class="row col-11 offset-1  align-items-center">
+                        <label class="col-2 form-label text-danger text-end mb-5"
+                               for="g-recaptcha">자동가입방지</label>
+                        <div class="col-3">
+                            <div class="g-recaptcha"
+                                 data-sitekey="6LdD4OskAAAAAH6Uazf4s8YBShdvsgMUbU5KkmDK"></div>
+                            <input type="hidden" name="g-recaptcha" id="g-recaptcha">
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
@@ -140,8 +190,8 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="mt-3">
-                        <h5 class="modal-title" id="exampleModalLabel"><h3>우편번호 찾기</h3></h5>
+                        <div class="mt-2">
+                        <h3 class="modal-title" id="exampleModalLabel">우편번호 찾기</h3>
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -149,15 +199,16 @@
                         <form name="zipfrm">
 
                             <div class="row mt-3">
-                                <div class="col-4 text-danger text-end">
-                                <label for="findzip" class="form-label">검색하실 주소의<br>
+                                <div class="col-4 text-danger text-end mt-2">
+                                <label for="dong" class="form-label">검색하실 주소의<br>
                                     동 이름을 입력하세요</label>
                                 </div>
                                 <div class="col-5 d-flex justify-content-end">
-                                    <input type="text" class="form-control border-danger" id="findzip" placeholder="주소를 입력하세요.">
+                                    <input type="text" class="form-control border-danger" id="dong" name="dong">
                                 </div>
                                 <div class="col-auto me-1 d-flex justify-content-end">
-                                    <button type="button" class="btn btn-primary">검색하기</button>
+                                    <button type="button" class="btn btn-primary" id="findzipbtn">
+                                        <i class="fas fa-search"></i> 검색하기</button>
                                 </div>
                                 <div class="col-10 offset-1 mt-4">
                                     지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색] 버튼을 클릭하세요
@@ -173,7 +224,8 @@
                     </div>
                     <div class="modal-footer justify-content-end">
                         <hr>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">선택하고 닫기</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            <i class="fas fa-check-square"></i> 선택하고 닫기</button>
                     </div>
                 </div>
             </div>
