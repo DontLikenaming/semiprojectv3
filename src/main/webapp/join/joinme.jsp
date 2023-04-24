@@ -197,27 +197,47 @@
                     </div>
                     <div class="modal-body">
                         <form name="zipfrm">
-
-                            <div class="row mt-3">
-                                <div class="col-4 text-danger text-end mt-2">
+                            <div class="row mt-3 justify-content-center align-items-center">
+                                <div class="col-3 text-danger text-end mt-2">
                                 <label for="dong" class="form-label">검색하실 주소의<br>
                                     동 이름을 입력하세요</label>
                                 </div>
                                 <div class="col-5 d-flex justify-content-end">
-                                    <input type="text" class="form-control border-danger" id="dong" name="dong">
+                                    <input type="text" class="form-control border-primary" id="dong" name="dong">
                                 </div>
                                 <div class="col-auto me-1 d-flex justify-content-end">
                                     <button type="button" class="btn btn-primary" id="findzipbtn">
                                         <i class="fas fa-search"></i> 검색하기</button>
                                 </div>
-                                <div class="col-10 offset-1 mt-4">
+                                <hr class="w-75 mx-auto mt-3">
+                                <p class="col-10 mt-1 text-center">
                                     지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색] 버튼을 클릭하세요
-                                </div>
-                                <div class="offset-1 col-9 mt-3">
-                                    <label for="zipaddr"></label>
-                                    <textarea class="form-control border-danger"
-                                              style="overflow-y:scroll; overflow-x: hidden;"
-                                              rows="15" id="zipaddr" name="zipaddr"></textarea>
+                                </p>
+                            </div>
+                            <div>
+                                <div class="col-8 offset-2 mt-3">
+                                    <select class="form-select" id="addrlist" name="addrlist" size="10">
+                                        <option>123-456 서울 구로구 신도림동</option>
+                                        <option>123-456 서울 구로구 구로동</option>
+                                        <option>123-456 서울 구로구 가리봉동</option>
+                                        <option>123-456 서울 구로구 고척동</option>
+                                        <option>123-456 서울 구로구 개봉동</option>
+                                        <option>123-456 서울 구로구 오류동</option>
+                                        <option>123-456 서울 구로구 천왕동</option>
+                                        <option>123-456 서울 구로구 항동</option>
+                                        <option>123-456 서울 구로구 궁동</option>
+                                        <option>123-456 서울 구로구 온수동</option>
+                                        <option>789-012 서울 금천구 가산동</option>
+                                        <option>789-012 서울 금천구 독산1동</option>
+                                        <option>789-012 서울 금천구 독산2동</option>
+                                        <option>789-012 서울 금천구 독산3동</option>
+                                        <option>789-012 서울 금천구 독산4동</option>
+                                        <option>789-012 서울 금천구 시흥1동</option>
+                                        <option>789-012 서울 금천구 시흥2동</option>
+                                        <option>789-012 서울 금천구 시흥3동</option>
+                                        <option>789-012 서울 금천구 시흥4동</option>
+                                        <option>789-012 서울 금천구 시흥15동</option>
+                                    </select>
                                 </div>
                             </div>
                         </form>
